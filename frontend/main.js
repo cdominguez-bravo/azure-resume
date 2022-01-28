@@ -1,9 +1,10 @@
 
-window.addEventListener('DOMCOntentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', (event) => {
+    console.log("Called JS method");
     getVisitCount();
 })
 
-const functionApi = '';
+const functionApi = 'http://localhost:7071/api/GetResumeCounter';
 
 const getVisitCount = () => {
 let count = 30;
